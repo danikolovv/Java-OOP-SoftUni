@@ -9,11 +9,11 @@ public class Main {
         String rank = scanner.nextLine();
         String suit = scanner.nextLine();
 
-        CardRank cardRank = CardRank.valueOf(rank);
-        CardSuit cardSuit = CardSuit.valueOf(suit);
+        CardRanks cardRanks = CardRanks.valueOf(rank);
+        CardSuits cardSuits = CardSuits.valueOf(suit);
 
-        int power = cardRank.getPower() + cardSuit.getPower();
+        int power = cardRanks.getPower() + cardSuits.getPower();
 
-        System.out.printf("Card name: %s of %s; Card power: %d", rank, suit, power);
+        System.out.printf("Card name: %s of %s; Card power: %d", cardRanks, cardSuits, power);
     }
 }

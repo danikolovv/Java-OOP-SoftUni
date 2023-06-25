@@ -1,13 +1,13 @@
 package WorkingWithAbstraction.Exercise.P03CardsWithPower;
 
-public enum CardSuit {
+public enum CardSuits {
     CLUBS(0),
     DIAMONDS(13),
     HEARTS(26),
     SPADES(39);
 
     private final int power;
-    CardSuit(int power) {
+    CardSuits(int power) {
         this.power = power;
     }
 

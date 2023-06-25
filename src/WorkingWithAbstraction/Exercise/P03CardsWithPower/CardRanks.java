@@ -1,6 +1,6 @@
 package WorkingWithAbstraction.Exercise.P03CardsWithPower;
 
-public enum CardRank {
+public enum CardRanks {
     ACE(14),
     TWO(2),
     THREE(3),
@@ -16,7 +16,7 @@ public enum CardRank {
     KING(13);
 
     private final int power;
-    CardRank(int power) {
+    CardRanks(int power) {
         this.power = power;
     }
 
