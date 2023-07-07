@@ -14,9 +14,9 @@ public class Main {
         String[] seif = scanner.nextLine().split("\\s+");
 
         var torba = new LinkedHashMap<String, LinkedHashMap<String, Long>>();
-        long zlato = 0;
-        long kamuni = 0;
-        long mangizi = 0;
+        long gold = 0;
+        long stones = 0;
+        long cash = 0;
 
         for (int i = 0; i < seif.length; i += 2) {
             String name = seif[i];
@@ -78,11 +78,11 @@ public class Main {
 
             torba.get(kvoE).put(name, torba.get(kvoE).get(name) + broika);
             if (kvoE.equals("Gold")) {
-                zlato += broika;
+                gold += broika;
             } else if (kvoE.equals("Gem")) {
-                kamuni += broika;
+                stones += broika;
             } else if (kvoE.equals("Cash")) {
-                mangizi += broika;
+                cash += broika;
             }
         }
 
