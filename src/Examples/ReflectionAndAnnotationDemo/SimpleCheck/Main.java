@@ -1,4 +1,4 @@
-package Examples.ReflectionAndAnnotationDemo;
+package Examples.ReflectionAndAnnotationDemo.SimpleCheck;
 
 public class Main {
     public static void main(String[] args) {
